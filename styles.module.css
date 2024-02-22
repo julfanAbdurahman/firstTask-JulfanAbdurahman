@@ -1,5 +1,5 @@
 .hello {
-  font: 40px Helvetica, Arial, sans-serif;
+  font: 20px Helvetica, Arial, sans-serif;
   background: #eee;
   padding: 100px;
   text-align: center;
@@ -9,7 +9,7 @@
   background: #ccc;
 }
 .styledTable {
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
   width: 100%;
 }
 
