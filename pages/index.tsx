@@ -47,7 +47,7 @@ const Home = () => {
                 <td>{index+1}</td>
                 <td>{item.name}</td>
                 <td>{item.address}</td>
-                <td>{item.isPermanent}</td>
+                <td>{item.isPermanent? "Yes" : "No"}</td>
               </tr>
             ))
           }
