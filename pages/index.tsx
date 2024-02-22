@@ -40,12 +40,17 @@ const Home = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>a</td>
-            <td>a</td>
-            <td>a</td>
-            <td>a</td>
-          </tr>
+          {/* {data.filter((item) => item.name.toLowerCase().includes(searchTerm.toLowerCase()).map((item)=>())}; */}
+          {
+            data.filter((item)=> item.name.toLowerCase().includes(searchTerm.toLowerCase())).map((item)=>(
+              <tr key={item.id}>
+                <td>{item.id}</td>
+                <td>{item.name}</td>
+                <td>{item.adress}</td>
+                <td>{item.isPermanent}</td>
+              </tr>
+            ))
+          }
         </tbody>
       </table>
     </div>
