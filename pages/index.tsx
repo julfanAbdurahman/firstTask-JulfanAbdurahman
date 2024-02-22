@@ -30,7 +30,7 @@ const Home = () => {
       value={searchTerm}
       onChange={(e)=>setSeacrTerm(e.target.value)}
       />
-      <table>
+      <table className={styles.styledTable}>
         <thead>
           <tr>
             <th>No</th>
@@ -40,7 +40,12 @@ const Home = () => {
           </tr>
         </thead>
         <tbody>
-          
+          <tr>
+            <td>a</td>
+            <td>a</td>
+            <td>a</td>
+            <td>a</td>
+          </tr>
         </tbody>
       </table>
     </div>

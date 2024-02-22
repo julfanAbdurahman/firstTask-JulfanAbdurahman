@@ -1,5 +1,5 @@
 .hello {
-  font: 15px Helvetica, Arial, sans-serif;
+  font: 40px Helvetica, Arial, sans-serif;
   background: #eee;
   padding: 100px;
   text-align: center;
@@ -7,4 +7,28 @@
 }
 .hello:hover {
   background: #ccc;
+}
+.styledTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.styledTable th,
+.styledTable td {
+  padding: 8px;
+  border: 1px solid #ddd; /* Add borders to cells */
+  text-align: left;
+}
+
+.styledTable th {
+  background-color: #f2f2f2; /* Light gray background for header */
+  color: #333; /* Dark gray text color for header */
+}
+
+.styledTable tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Alternate row background color */
+}
+
+.styledTable tbody tr:hover {
+  background-color: #ddd; /* Hover effect for rows */
 }
