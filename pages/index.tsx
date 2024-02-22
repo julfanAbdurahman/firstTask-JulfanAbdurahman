@@ -10,7 +10,7 @@ const Home = () => {
     try {
       const response = await fetch('https://efbdpjvnpulvomzjmpfz.supabase.co/functions/v1/rest-interview');
       const jsonData = await response.json();
-      console.log(jsonData);
+      console.log(jsonData.locations);
       setData(jsonData);
     }
     catch(error) {
@@ -46,7 +46,7 @@ const Home = () => {
               <tr key={item.id}>
                 <td>{item.id}</td>
                 <td>{item.name}</td>
-                <td>{item.adress}</td>
+                <td>{item.address}</td>
                 <td>{item.isPermanent}</td>
               </tr>
             ))
