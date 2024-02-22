@@ -10,6 +10,7 @@ const Home = () => {
     try {
       const response = await fetch('https://efbdpjvnpulvomzjmpfz.supabase.co/functions/v1/rest-interview');
       const jsonData = await response.json();
+      console.log(jsonData.locations);
       setData(jsonData.locations);
     }
     catch(error) {
