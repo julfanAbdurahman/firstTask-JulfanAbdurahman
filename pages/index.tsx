@@ -1,4 +1,3 @@
-import { log } from "console";
 import styles from "../styles.module.css";
 import React,{useState, useEffect} from "react";
 
@@ -10,17 +9,15 @@ const Home = () => {
     try {
       const response = await fetch('https://efbdpjvnpulvomzjmpfz.supabase.co/functions/v1/rest-interview');
       const jsonData = await response.json();
-      console.log(jsonData.locations);
       setData(jsonData.locations);
     }
     catch(error) {
       console.error('Error fetching data ',error);
     }
   };
-
-  useEffect(()=>{
-    fetchData();
-  },[]);
+    useEffect(()=>{
+      fetchData();
+    },[]);
   return (
     <div className={styles.hello}>
       <p>Find Location</p>
@@ -40,7 +37,6 @@ const Home = () => {
           </tr>
         </thead>
         <tbody>
-          {/* {data.filter((item) => item.name.toLowerCase().includes(searchTerm.toLowerCase()).map((item)=>())}; */}
           {
             data.filter((item)=> item.name.toLowerCase().includes(searchTerm.toLowerCase())).map((item, index)=>(
               <tr key={index}>

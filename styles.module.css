@@ -5,9 +5,6 @@
   text-align: center;
   transition: 100ms ease-in background;
 }
-.hello:hover {
-  background: #ccc;
-}
 .styledTable {
   /* border-collapse: collapse; */
   width: 100%;
